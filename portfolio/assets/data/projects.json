@@ -1,0 +1,24 @@
+
+[
+  {
+    "title": "Ocean UI Landing",
+    "description": "A fluid landing page with wave parallax and gold/red theme.",
+    "tags": ["HTML", "CSS", "GSAP"],
+    "demo": "https://example.com",
+    "repo": "https://github.com/yourname/project"
+  },
+  {
+    "title": "Portfolio v1",
+    "description": "Single page portfolio optimized for GitHub Pages.",
+    "tags": ["Static", "Responsive", "A11y"],
+    "demo": "https://example.com",
+    "repo": "https://github.com/yourname/project"
+  },
+  {
+    "title": "Motion Microinteractions",
+    "description": "Button hover, shimmer text, and scroll reveals.",
+    "tags": ["UI Motion", "Design"],
+    "demo": "https://example.com",
+    "repo": "https://github.com/yourname/project"
+  }
+]

@@ -1,0 +1,184 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Gold & Red ocean-fluid portfolio — hosted on GitHub Pages." />
+
+  ./assets/css/styles.css
+</head>
+
+<body>
+  <!-- Intro / Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__mark">YN</div>
+      <div class="preloader__title">Your Name</div>
+      <div class="preloader__sub">Portfolio • Gold / Red • Ocean Fluid</div>
+
+      <svg class="preloader__waves" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path class="wave wave--1" d="M0,60 C150,20 350,100 600,60 C850,20 1050,100 1200,60 V120 H0 Z"></path>
+        <path class="wave wave--2" d="M0,60 C150,20 350,100 600,60 C850,20 1050,100 1200,60 V120 H0 Z"></path>
+        <path class="wave wave--3" d="M0,60 C150,20 350,100 600,60 C850,20 1050,100 1200,60 V120 H0 Z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Liquid / Glow SVG filter -->
+  <svg class="visually-hidden" width="0" height="0" aria-hidden="true" focusable="false">
+    <filter id="liquid">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="2">
+        <animate attributeName="baseFrequency" dur="10s" values="0.010;0.016;0.010" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" scale="18" />
+    </filter>
+  </svg>
+
+  <!-- Header -->
+  <header class="header">
+    #top
+      <span class="brand__dot"></span>
+      <span class="brand__name">Your Name</span>
+    </a>
+
+    <nav class="nav">
+      #aboutAbout</a>
+      #projectsProjects</a>
+      #skillsSkills</a>
+      #contactContact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="section hero">
+      <div class="hero__bg">
+        <div class="liquid-blob" aria-hidden="true"></div>
+        <div class="sparkle" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="kicker reveal">Gold & Red • Ocean Fluid</p>
+        <h1 class="title reveal">
+          I build <span class="gold">beautiful</span>, fast web experiences.
+        </h1>
+        <p class="lead reveal">
+          Single-page portfolio with fluid waves, scroll animations, and a clean GitHub Pages workflow.
+        </p>
+
+        <div class="hero__actions reveal">
+          #projectsView Projects</a>
+          #contactHire / Contact</a>
+        </div>
+      </div>
+
+      <!-- Hero waves -->
+      <div class="waves-wrap" aria-hidden="true">
+        <svg class="waves" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path class="wave wave--1" d="M0,60 C150,20 350,100 600,60 C850,20 1050,100 1200,60 V120 H0 Z"></path>
+          <path class="wave wave--2" d="M0,60 C150,20 350,100 600,60 C850,20 1050,100 1200,60 V120 H0 Z"></path>
+          <path class="wave wave--3" d="M0,60 C150,20 350,100 600,60 C850,20 1050,100 1200,60 V120 H0 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container grid">
+        <div class="card reveal">
+          <h2 class="section-title">About</h2>
+          <p>
+            Write a short bio: what you do, what you love building, and what makes you different.
+          </p>
+          <ul class="bullets">
+            <li>⚡ Fast, accessible UI</li>
+            <li>🌊 Motion design & fluid visuals</li>
+            <li>🧠 Clean architecture</li>
+          </ul>
+        </div>
+
+        <div class="card card--highlight reveal">
+          <h3>Quick Facts</h3>
+          <div class="facts">
+            <div><span class="facts__label">Location</span><span class="facts__value">Italy</span></div>
+            <div><span class="facts__label">Focus</span><span class="facts__value">Frontend / UI</span></div>
+            <div><span class="facts__label">Availability</span><span class="facts__value">Freelance / Full-time</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Projects</h2>
+          <p class="muted">Edit <code>assets/data/projects.json</code> to update these cards.</p>
+        </div>
+
+        <div id="projectsGrid" class="projects"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Skills</h2>
+          <p class="muted">Animated bars on scroll + subtle wave parallax.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill reveal">
+            <div class="skill__row"><span>HTML/CSS</span><span class="skill__pct">90%</span></div>
+            <div class="skill__bar"><span data-level="0.90"></span></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill__row"><span>JavaScript</span><span class="skill__pct">85%</span></div>
+            <div class="skill__bar"><span data-level="0.85"></span></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill__row"><span>UI Motion</span><span class="skill__pct">80%</span></div>
+            <div class="skill__bar"><span data-level="0.80"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--alt">
+      <div class="container contact">
+        <div class="card reveal">
+          <h2 class="section-title">Contact</h2>
+          <p class="muted">Add your links and email. Keep it simple.</p>
+
+          <div class="contact__links">
+            mailto:you@example.comyou@example.com</a>
+            https://github.com/yournameGitHub</a>
+            https://www.linkedin.com/in/yournameLinkedIn</a>
+          </div>
+
+          <p class="tiny muted">Tip: You can also use a simple contact form provider (Formspree, etc.) since GitHub Pages is static.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <span>© <span id="year"></span> Your Name</span>
+        <span class="footer__dot">•</span>
+        #topBack to top</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- GSAP + ScrollTrigger (scroll animations) -->
+  <!-- ScrollTrigger docs show CDN usage + gsap.registerPlugin(ScrollTrigger). [2](https://gsap.com/docs/v3/Plugins/ScrollTrigger/) -->
+  https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js</script>
+  https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js</script>
+
+  ./assets/js/main.js</script>
+</body>
+</html>
